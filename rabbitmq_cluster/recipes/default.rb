@@ -10,6 +10,7 @@ end
 
 rabbit_nodes = instances.map{ |name, attrs| "rabbit@#{name}" }
 node.set['rabbitmq']['cluster_disk_nodes'] = rabbit_nodes
+log("ANTOINE cluster_disk_nodes #{rabbit_nodes}") { Level : warn }
 
 include_recipe 'rabbitmq'
 
