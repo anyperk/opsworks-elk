@@ -2,7 +2,7 @@
 instances = node[:opsworks][:layers][:rabbitmq][:instances]
 
 instances.each do |name, attrs|
-  log("ANTOINE name #{name}") { Level : warn }
+  log("ANTOINE name #{name}") { Level :warn }
   hostsfile_entry attrs['private_ip'] do
     hostname  name
     unique    true
@@ -11,7 +11,7 @@ end
 
 rabbit_nodes = instances.map{ |name, attrs| "rabbit@#{name}" }
 node.set['rabbitmq']['cluster_disk_nodes'] = rabbit_nodes
-log("ANTOINE cluster_disk_nodes #{rabbit_nodes}") { Level : warn }
+log("ANTOINE cluster_disk_nodes #{rabbit_nodes}") { Level :warn }
 
 include_recipe 'rabbitmq'
 
