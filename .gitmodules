@@ -12,7 +12,7 @@
 	url = https://github.com/brianbianco/redisio.git
 [submodule "rabbitmq"]
 	path = rabbitmq
-	url = https://github.com/opscode-cookbooks/rabbitmq.git
+	url = https://github.com/tinnou/rabbitmq.git
 [submodule "java"]
 	path = java
 	url = https://github.com/opscode-cookbooks/java.git
