@@ -32,6 +32,8 @@ rabbitmq_user node['rabbitmq_cluster']['user'] do
   action :set_permissions
 end
 
+Chef::Log.warn "ANTOINE name #{node['rabbitmq_cluster']}
+
 rabbitmq_user node['rabbitmq_cluster']['admin']['user'] do
   password node['rabbitmq_cluster']['admin']['password']
   action :add
