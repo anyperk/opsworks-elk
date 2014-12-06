@@ -2,7 +2,6 @@
 instances = node[:opsworks][:layers][:rabbitmq][:instances]
 
 instances.each do |name, attrs|
-  Chef::Log.warn "ANTOINE name #{name} #{name.inspect}"
   hostsfile_entry attrs['private_ip'] do
     hostname  name
     unique    true
@@ -11,7 +10,6 @@ end
 
 rabbit_nodes = instances.map{ |name, attrs| "rabbit@#{name}" }
 node.set['rabbitmq']['cluster_disk_nodes'] = rabbit_nodes
-Chef::Log.warn "ANTOINE name #{rabbit_nodes} #{rabbit_nodes.inspect}"
 
 include_recipe 'rabbitmq'
 
@@ -31,8 +29,6 @@ rabbitmq_user node['rabbitmq_cluster']['user'] do
   permissions ".* .* .*"
   action :set_permissions
 end
-
-Chef::Log.warn "ANTOINE name #{node['rabbitmq_cluster']}"
 
 rabbitmq_user node['rabbitmq_cluster']['admin']['user'] do
   password node['rabbitmq_cluster']['admin']['password']
