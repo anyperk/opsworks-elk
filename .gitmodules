@@ -8,11 +8,11 @@
 	path = logstash
 	url = https://github.com/snasirca/chef-logstash.git
 [submodule "kibana"]
-        path = kibana
-        url = https://github.com/snasirca/chef-kibana.git
+	path = kibana
+	url = https://github.com/snasirca/chef-kibana.git
 [submodule "rabbitmq"]
-        path = rabbitmq
-        url = https://github.com/snasirca/rabbitmq.git
+	path = rabbitmq
+	url = https://github.com/snasirca/rabbitmq.git
 [submodule "redisio"]
 	path = redisio
 	url = https://github.com/brianbianco/redisio.git
