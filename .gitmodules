@@ -127,6 +127,3 @@
 [submodule "htpasswd"]
 	path = htpasswd
 	url = https://github.com/Youscribe/htpasswd-cookbook.git
-[submodule "elasticsearch_monitoring"]
-	path = elasticsearch_monitoring
-	url = https://github.com/tinnou/cookbook-elasticsearch-monitoring
