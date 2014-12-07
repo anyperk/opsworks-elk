@@ -1,6 +1,6 @@
 [submodule "elasticsearch"]
 	path = elasticsearch
-	url = https://github.com/snasirca/cookbook-elasticsearch.git
+	url = https://github.com/snasirca/chef-elasticsearch.git
 [submodule "elasticsearch-http-basic"]
 	path = elasticsearch-http-basic
 	url = https://github.com/snasirca/elasticsearch-http-basic.git
@@ -12,7 +12,7 @@
 	url = https://github.com/snasirca/chef-kibana.git
 [submodule "rabbitmq"]
 	path = rabbitmq
-	url = https://github.com/snasirca/rabbitmq.git
+	url = https://github.com/snasirca/chef-rabbitmq.git
 [submodule "redisio"]
 	path = redisio
 	url = https://github.com/brianbianco/redisio.git
